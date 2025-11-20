@@ -1,0 +1,29 @@
+name:matrix
+
+on:
+
+push:
+
+jobs:
+maxtrix-job:
+  name:matrix job
+  strategy:
+    matrix:
+     runner: [ubuntu-latest,windows-latest]
+python-version: [3.11.3.12.3.13]
+include:
+ - runner: macos-latest
+ Python-version: 3.12
+ exclude:
+ - runner: window-latest
+ python-version: 3.13
+ runs-on: ${{ matrix.runner}}
+ steps:
+  - run: echo this job will run in pyton version ${{ matrix.python-version }}
+  
+
+
+ 
+ 
+
+     
