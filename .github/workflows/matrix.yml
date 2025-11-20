@@ -1,15 +1,15 @@
 name: matrix
 
 on:
-push:
+ push:
 
 jobs:
-maxtrix-job:
-  name: matrix job
+  maxtrix-job:
+   name: matrix job
   strategy:
     matrix:
-     runner: [ubuntu-latest, windows-latest]
-python-version: [3.11.3.12.3.13]
+      runner: [ubuntu-latest, windows-latest]
+      python-version: [3.11.3.12.3.13]
 include:
 - runner: macos-latest
   python-versions: 3.12
