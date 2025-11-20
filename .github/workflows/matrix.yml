@@ -1,7 +1,6 @@
-name:matrix
+name: matrix
 
 on:
-
 push:
 
 jobs:
