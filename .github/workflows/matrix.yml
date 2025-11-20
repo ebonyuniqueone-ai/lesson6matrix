@@ -5,7 +5,7 @@ push:
 
 jobs:
 maxtrix-job:
-  name:matrix job
+  name: matrix job
   strategy:
     matrix:
      runner: [ubuntu-latest,windows-latest]
